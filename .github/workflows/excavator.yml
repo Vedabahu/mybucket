@@ -2,7 +2,7 @@ on:
   workflow_dispatch:
   schedule:
     # At 05:00 AM
-    - cron: '0 0 5 1/1 * ? *'
+    - cron: '* */20 * * *'
 name: Excavator
 jobs:
   excavate:
