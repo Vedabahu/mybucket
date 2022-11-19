@@ -22,6 +22,9 @@ pre_install:
 - '       Out-File -FilePath "$dir\$_" -Encoding ascii'
 - '    }'
 - '}'
+checkver: github
+autoupdate:
+  url: https://github.com/libgenapps/LibgenDesktop/releases/download/$version/LibgenDesktop.Portable.$architecture.zip
 license: Unknown
 notes: For information of latest available libgen mirrors, see https://wiki.mhut.org/_media/software:libgen_desktop_mirrors_update.zip
 

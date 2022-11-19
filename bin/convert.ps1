@@ -4,6 +4,6 @@ ForEach-Object {
     Write-Output "Comlpeted converting $($_.BaseName).yaml"
 }
 Write-Output "`n`nStarting Formatting"
-$PSScriptRoot\formatjson.ps1
+Invoke-Expression $PSScriptRoot\.\formatjson.ps1
 Write-Output "Formatting complete"
 Write-Output "`nFully Completed."
